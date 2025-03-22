@@ -1,3 +1,3 @@
-# Basic Postgres Python
+# Postgres Wagtail
 
-This repository provides a basic python environment connected with PostgreSQL database.
+This repository provides a Wagtail project template connected with PostgreSQL database.
