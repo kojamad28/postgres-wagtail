@@ -1,0 +1,14 @@
+psycopg
+django
+django-environ
+gunicorn
+django-structlog
+django-extensions
+django-model-utils
+django-anymail[amazon-ses]
+django-axes[ipware]
+django-guardian
+django-payments[stripe]
+django-recaptcha
+django-two-factor-auth[phonenumbers]
+wagtail
