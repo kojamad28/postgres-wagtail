@@ -1,10 +1,1 @@
-black
-ruff
-mypy
-tox
-psycopg
-sqlalchemy
-python-dotenv
-pytest
-structlog
-pytest-structlog
+-r requirements/prod.txt
