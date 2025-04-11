@@ -1,5 +1,4 @@
 psycopg
-django
 django-environ
 gunicorn
 django-structlog
