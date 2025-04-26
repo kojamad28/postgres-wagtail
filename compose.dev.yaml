@@ -16,7 +16,7 @@ services:
       args:
         REQ_DIR: "requirements/"
         REQ_TXT: "dev.txt"
-    image: kojamad28/postgres-wagtail
+    image: kojamad28/postgres-wagtail-dev
     container_name: wagtail
     command: /bin/bash
     volumes:
@@ -25,6 +25,17 @@ services:
     stdin_open: true
     depends_on:
       - postgres
+  nginx:
+    image: kojamad28/wagtail-nginx
+    container_name: nginx
+    build: ./nginx
+    volumes:
+      - ./static:/usr/src/static
+      - ./media:/usr/src/media
+    ports:
+      - "80:80"
+    depends_on:
+      - wagtail
 
 volumes:
   postgres_data:
